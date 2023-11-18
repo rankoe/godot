@@ -188,19 +188,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m7xqf"]
-size = Vector2(38, 48)
+size = Vector2(38.5, 49.5)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_vkw8m")
 
 [node name="frog" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-1.5, -3.5)
+position = Vector2(0, -2.38419e-07)
 scale = Vector2(1.90625, 1.90625)
 sprite_frames = SubResource("SpriteFrames_x3few")
-animation = &"jumping"
 autoplay = "default"
+frame_progress = 0.821956
 
 [node name="frogcol" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -0.5)
 shape = SubResource("RectangleShape2D_m7xqf")

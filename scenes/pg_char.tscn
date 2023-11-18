@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://b7qa58c2uesh7"]
+[gd_scene load_steps=4 format=3 uid="uid://b7qa58c2uesh7"]
 
+[ext_resource type="Script" path="res://scenes/pg_char.gd" id="1_sdygq"]
 [ext_resource type="Texture2D" uid="uid://cdys8l7qce6h" path="res://Fall (32x32).png" id="1_y0kna"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m7xqf"]
 size = Vector2(38, 48)
 
 [node name="CharacterBody2D2" type="CharacterBody2D"]
+script = ExtResource("1_sdygq")
 
 [node name="pgfall" type="Sprite2D" parent="."]
 texture_filter = 1
